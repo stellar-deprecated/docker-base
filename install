@@ -10,6 +10,7 @@ wget -nv -O /usr/local/bin/confd https://github.com/kelseyhightower/confd/releas
 chmod +x /usr/local/bin/confd
 
 mkdir /cores
+mkdir /logs
 
 apt-get clean
 rm -rf /var/lib/apt/lists/*

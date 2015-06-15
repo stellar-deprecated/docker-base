@@ -1,6 +1,6 @@
-# docker-atlas
+# docker-base
 
-Stellar's base container.
+Stellar's base container, from debian:jessie.
 
 Includes:
 
@@ -8,6 +8,7 @@ Includes:
 * software-properties-common - for easy use of PPAs
 * confd - for building configuration files
 * /cores - a place to put core dumps when they happen
+* /logs - a common place for any non-stdout logging
 
 ## Usage
 
