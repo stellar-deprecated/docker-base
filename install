@@ -9,8 +9,5 @@ apt-get install -y wget \
 wget -nv -O /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64
 chmod +x /usr/local/bin/confd
 
-mkdir /cores
-mkdir /logs
-
 apt-get clean
 rm -rf /var/lib/apt/lists/*
