@@ -7,6 +7,7 @@ Includes:
 * wget - for grabbing stuff
 * software-properties-common - for easy use of PPAs
 * confd - for building configuration files
+* init - a copy of [lovely_touching](https://github.com/ohjames/lovely_touching) for handling PID 1
 * /cores - a place to put core dumps when they happen
 * /logs - a common place for any non-stdout logging
 

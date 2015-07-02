@@ -9,5 +9,10 @@ apt-get install -y wget \
 wget -nv -O /usr/local/bin/confd https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64
 chmod +x /usr/local/bin/confd
 
+# Allows SIGABRT and adopt orphaned child processes
+wget -nv -O init https://s3.amazonaws.com/stellar.org/releases/3rdparty/github.com/ohjames/lovely_touching/lovely_touching-559873ec
+test $(md5sum init | awk '{print $1}') == "429a9bcefd64e12ac0e0bc7ed91ea734"
+chmod +x init
+
 apt-get clean
 rm -rf /var/lib/apt/lists/*
