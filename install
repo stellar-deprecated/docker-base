@@ -10,8 +10,8 @@ wget -nv -O /usr/local/bin/confd https://github.com/kelseyhightower/confd/releas
 chmod +x /usr/local/bin/confd
 
 # Allows SIGABRT and adopt orphaned child processes
-wget -nv -O init https://s3.amazonaws.com/stellar.org/releases/3rdparty/github.com/ohjames/lovely_touching/lovely_touching-559873ec
-test $(md5sum init | awk '{print $1}') == "429a9bcefd64e12ac0e0bc7ed91ea734"
+wget -nv -O init https://github.com/ohjames/lovely_touching/releases/download/v0.1.0/lovely_touching
+test $(md5sum init | awk '{print $1}') == "d229951a822dbb0f4306166e61141c30"
 chmod +x init
 
 apt-get clean
