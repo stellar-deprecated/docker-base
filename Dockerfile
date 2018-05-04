@@ -1,8 +1,8 @@
-FROM debian:jessie
+FROM debian:stretch
 
 MAINTAINER Mat Schaffer <mat@stellar.org>
 
-ENV CONFD_VERSION 0.9.0
+ENV CONFD_VERSION 0.15.0
 
 VOLUME /logs
 VOLUME /cores
